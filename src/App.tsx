@@ -10,6 +10,7 @@ import Contact from './pages/Contact'
 import Admin from './pages/Admin'
 import Projects from './pages/Projects'
 import ProjectSubmit from './pages/ProjectSubmit'
+import Team from './pages/Team'
 import Footer from './components/footer'
 import './App.css'
 
@@ -26,6 +27,7 @@ export default function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/project-submit" element={<ProjectSubmit />} />
+        <Route path="/team" element={<Team />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

@@ -1,0 +1,146 @@
+[
+    {
+        "name": "Prof. Debasish Mondal",
+        "post": "advisor",
+        "image": "https://randomuser.me/api/portraits/men/75.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Prof. Sanjoy Mandal",
+        "post": "advisor",
+        "image": "https://randomuser.me/api/portraits/men/52.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Dipendu das",
+        "post": "head",
+        "image": "/images/team/Dipendu.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Trinakshi Saha",
+        "post": "head",
+        "image": "/images/team/Trinakshi.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Rahul Sharma",
+        "post": "head",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Ananya Sen",
+        "post": "head",
+        "image": "https://randomuser.me/api/portraits/women/44.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Rahul Sharma",
+        "post": "head",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Ananya Sen",
+        "post": "head",
+        "image": "https://randomuser.me/api/portraits/women/44.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Rahul Sharma",
+        "post": "head",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Ananya Sen",
+        "post": "head",
+        "image": "https://randomuser.me/api/portraits/women/44.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Rahul Sharma",
+        "post": "head",
+        "image": "https://randomuser.me/api/portraits/men/32.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Ananya Sen",
+        "post": "head",
+        "image": "https://randomuser.me/api/portraits/women/44.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Arjun Das",
+        "post": "subhead",
+        "image": "https://randomuser.me/api/portraits/men/18.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Priya Ghosh",
+        "post": "subhead",
+        "image": "https://randomuser.me/api/portraits/women/22.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Souvik Chatterjee",
+        "post": "subhead",
+        "image": "https://randomuser.me/api/portraits/men/41.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Neha Banerjee",
+        "post": "subhead",
+        "image": "https://randomuser.me/api/portraits/women/31.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Rohan Mukherjee",
+        "post": "subhead",
+        "image": "https://randomuser.me/api/portraits/men/55.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    },
+    {
+        "name": "Shreya Paul",
+        "post": "subhead",
+        "image": "https://randomuser.me/api/portraits/women/68.jpg",
+        "facebook": "https://facebook.com",
+        "insta": "https://instagram.com",
+        "linkedin": "https://linkedin.com"
+    }
+]
