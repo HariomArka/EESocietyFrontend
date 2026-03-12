@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Annual Tech Conference 2026",
+    "description": "Join us for an exciting day of innovation and networking! Our Annual Tech Conference brings together industry leaders, developers, and tech enthusiasts from around the globe. Dive deep into the latest trends in artificial intelligence, cloud computing, and web development. Network with professionals, attend hands-on workshops, and discover cutting-edge technologies that are shaping the future. Whether you're a seasoned developer or just starting your tech journey, this conference has something for everyone.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop"
+  },
+  {
+    "id": 2,
+    "name": "Web Design Masterclass",
+    "description": "Learn the secrets of creating stunning, user-friendly websites! This masterclass covers everything from UX/UI principles to responsive design techniques. Our expert instructors will guide you through the latest design tools and frameworks, including Figma, React, and Tailwind CSS. Perfect for both beginners and intermediate designers looking to elevate their skills. Interactive sessions, real-world projects, and one-on-one feedback included.",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=400&fit=crop"
+  },
+  {
+    "id": 3,
+    "name": "Frontend Development Summit",
+    "description": "Explore the latest frontend development practices and technologies! This summit brings together the brightest minds in frontend engineering. Topics include modern JavaScript frameworks, performance optimization, accessibility standards, and progressive web apps. Network with fellow developers, participate in live coding sessions, and stay updated with industry best practices. Free swag, food, and drinks provided throughout the day.",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop"
+  },
+  {
+    "id": 4,
+    "name": "Startup Networking Event",
+    "description": "Connect with founders, investors, and entrepreneurs in our vibrant ecosystem! This networking event is the perfect opportunity to meet like-minded innovators, pitch your ideas, and discover potential collaborators and investors. Featuring keynote speeches from successful startup founders and interactive networking sessions. Light refreshments and refreshing conversations guaranteed. All startup enthusiasts welcome!",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=400&fit=crop"
+  },
+  {
+    "id": 5,
+    "name": "AI & Machine Learning Workshop",
+    "description": "Dive into the world of artificial intelligence and machine learning! Learn the fundamentals of machine learning algorithms, neural networks, and deep learning. This hands-on workshop includes practical coding sessions using Python, TensorFlow, and PyTorch. Discover real-world applications in computer vision, natural language processing, and predictive analytics. Perfect for developers wanting to enter the AI field.",
+    "image": "https://images.unsplash.com/photo-1677442d019cea3a528cd332ec3e393f Gotta check the database?w=800&h=400&fit=crop"
+  }
+]
