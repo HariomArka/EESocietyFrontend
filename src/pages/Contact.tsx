@@ -27,12 +27,12 @@ const contactInfo = [
   },
 ]
 
-const officers = [
-  { name: 'Arjun Singh', position: 'President', email: 'president@ees.iiest.ac.in' },
-  { name: 'Priya Sharma', position: 'Vice President', email: 'vpresident@ees.iiest.ac.in' },
-  { name: 'Rohan Kumar', position: 'Secretary', email: 'secretary@ees.iiest.ac.in' },
-  { name: 'Isha Patel', position: 'Treasurer', email: 'treasurer@ees.iiest.ac.in' },
-]
+// const officers = [
+//   { name: 'Arjun Singh', position: 'President', email: 'president@ees.iiest.ac.in' },
+//   { name: 'Priya Sharma', position: 'Vice President', email: 'vpresident@ees.iiest.ac.in' },
+//   { name: 'Rohan Kumar', position: 'Secretary', email: 'secretary@ees.iiest.ac.in' },
+//   { name: 'Isha Patel', position: 'Treasurer', email: 'treasurer@ees.iiest.ac.in' },
+// ]
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', subject: '', message: '' })
