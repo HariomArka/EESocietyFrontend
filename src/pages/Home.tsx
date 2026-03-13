@@ -7,8 +7,8 @@ function useTypewriter(text: string, speed = 55, startDelay = 300, loop = false,
   const [done, setDone] = useState(false)
 
   useEffect(() => {
-    let intervalId: NodeJS.Timer | null = null
-    let startTimer: NodeJS.Timer | null = null
+    let intervalId: number | null = null
+    let startTimer: number | null = null
 
     const startTyping = () => {
       setDisplayed('')
