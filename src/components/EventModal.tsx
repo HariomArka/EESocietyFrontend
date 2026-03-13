@@ -16,43 +16,48 @@ const EventModal: React.FC<EventModalProps> = ({ isOpen, event, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fadeIn"
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-fadeIn"
       onClick={onClose}
     >
       <div
-        className="bg-white rounded-3xl overflow-hidden max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl relative animate-modalSlide transform transition-all"
+        className="bg-[#060913] border border-white/10 rounded-3xl overflow-hidden max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl shadow-blue-950/40 relative animate-modalSlide transform transition-all"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-6 right-6 z-10 w-10 h-10 bg-black/60 hover:bg-black/80 text-white rounded-full flex items-center justify-center text-2xl transition-all duration-300 hover:rotate-90"
+          className="absolute top-5 right-5 z-10 w-10 h-10 bg-white/10 hover:bg-white/20 border border-white/10 text-gray-300 hover:text-white rounded-full flex items-center justify-center text-xl transition-all duration-300 hover:rotate-90"
         >
           ✕
         </button>
 
         {/* Image Header */}
-        <div className="h-80 overflow-hidden relative">
+        <div className="h-72 overflow-hidden relative">
           <img
             src={event.image}
             alt={event.name}
             className="w-full h-full object-cover animate-imageZoom"
           />
+          {/* Gradient overlay fading into the dark card background */}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#060913] via-[#060913]/30 to-transparent" />
         </div>
 
         {/* Content Body */}
-        <div className="p-10 animate-contentSlide">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6 tracking-tight">
+        <div className="px-8 pb-8 -mt-6 animate-contentSlide">
+          {/* Title sits right on top of the faded gradient */}
+          <h2 className="text-3xl font-extrabold text-white mb-4 tracking-tight">
             {event.name}
           </h2>
 
-          <p className="text-gray-700 text-lg leading-relaxed mb-8 text-justify">
+          <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full mb-5" />
+
+          <p className="text-gray-400 text-base leading-relaxed mb-8 text-justify">
             {event.description}
           </p>
 
           <button
             onClick={onClose}
-            className="w-full bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-700 hover:to-purple-900 text-white font-bold py-4 px-8 rounded-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95 shadow-lg hover:shadow-xl"
+            className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 px-8 rounded-xl transition-all duration-300 transform hover:-translate-y-0.5 active:scale-95 shadow-lg shadow-blue-600/25 hover:shadow-blue-500/30"
           >
             Close
           </button>

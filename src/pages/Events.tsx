@@ -33,7 +33,7 @@ export default function Events() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-700 opacity-10 rounded-full blur-3xl" />
         <div className="relative z-10">
           <p className="text-blue-500 text-sm font-semibold uppercase tracking-widest mb-3">What's On</p>
-          <h1 className="text-5xl sm:text-6xl font-extrabold mb-5">Upcoming <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Events</span></h1>
+          <h1 className="text-5xl sm:text-6xl font-extrabold mb-5">Our <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Events</span></h1>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">Discover workshops, tech talks, hackathons, and community gatherings hosted by EES.</p>
         </div>
       </section>

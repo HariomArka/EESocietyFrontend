@@ -1,4 +1,41 @@
 import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+
+// ── Typewriter hook ──────────────────────────────────────────────────────────
+function useTypewriter(text: string, speed = 55, startDelay = 300, loop = false, loopDelay = 1000) {
+  const [displayed, setDisplayed] = useState('')
+  const [done, setDone] = useState(false)
+
+  useEffect(() => {
+    let intervalId: NodeJS.Timer | null = null
+    let startTimer: NodeJS.Timer | null = null
+
+    const startTyping = () => {
+      setDisplayed('')
+      setDone(false)
+      let i = 0
+      intervalId = setInterval(() => {
+        i++
+        setDisplayed(text.slice(0, i))
+        if (i >= text.length) {
+          if (intervalId) clearInterval(intervalId)
+          setDone(true)
+          if (loop) {
+            startTimer = setTimeout(startTyping, loopDelay)
+          }
+        }
+      }, speed)
+    }
+
+    startTimer = setTimeout(startTyping, startDelay)
+    return () => {
+      if (intervalId) clearInterval(intervalId)
+      if (startTimer) clearTimeout(startTimer)
+    }
+  }, [text, speed, startDelay, loop, loopDelay])
+
+  return { displayed, done }
+}
 
 const features = [
   {
@@ -46,6 +83,31 @@ const stats = [
   { value: '95%', label: 'Placement Rate' },
 ]
 
+// ── Heading that types itself out on the hero section ─────────────────────
+function HeroHeading() {
+  // the piece of text now types repeatedly in a loop
+  const { displayed, done } = useTypewriter(
+    'Engineering the Future of Electricity',
+    60,
+    200,
+    true, // enable looping
+    1200 // wait 1.2s before restarting
+  )
+
+  return (
+    <h1 className="text-5xl sm:text-6xl font-extrabold mb-5 flex items-center justify-center">
+      {displayed}
+      {/* simple cursor indicator */}
+      <span
+        className={
+          'inline-block w-0.5 h-10 bg-white ml-1 transition-opacity duration-200 ' +
+          (done ? 'opacity-0' : 'opacity-100 animate-pulse')
+        }
+      />
+    </h1>
+  )
+}
+
 export default function Home() {
   return (
     <main className="bg-black text-white">
@@ -66,17 +128,10 @@ export default function Home() {
         <div className="relative z-10 max-w-4xl mx-auto">
           <div className="inline-flex items-center gap-2 bg-blue-950/60 border border-blue-700/40 text-blue-300 text-xs font-semibold px-4 py-1.5 rounded-full mb-8 backdrop-blur-sm">
             <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse"></span>
-            Electrical Engineering Society — IIEST Shibpur
+            Electrical Engineering Society — IIT Kharagpur
           </div>
 
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight mb-6">
-            Engineering{' '}
-            <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
-              the Future
-            </span>
-            <br />
-            of Electricity
-          </h1>
+          <HeroHeading />
 
           <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
             A community of students and faculty driving research, innovation, and real-world impact in power systems, electronics, and embedded technology.
@@ -130,7 +185,7 @@ export default function Home() {
             <span className="text-blue-400">High Voltage</span>
           </h2>
           <p className="text-gray-400 leading-relaxed mb-5">
-            The Electrical Engineering Society at IIEST Shibpur has been a cornerstone of technical excellence for decades. We bring together the brightest minds to tackle real-world problems in energy, signal processing, and intelligent systems.
+            The Electrical Engineering Society at IIT Kharagpur has been a cornerstone of technical excellence for decades. We bring together the brightest minds to tackle real-world problems in energy, signal processing, and intelligent systems.
           </p>
           <p className="text-gray-400 leading-relaxed mb-8">
             Whether you're a first year student beginning your journey or a seasoned researcher, EES is your platform to grow, connect, and create.

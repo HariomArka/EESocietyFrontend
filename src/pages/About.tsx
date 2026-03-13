@@ -37,8 +37,8 @@ export default function About() {
       </section>
 
       {/* ── MISSION + VISION ─────────────────────────────────────────────── */}
-      <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
-        <div>
+      <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center ">
+        <div className='text-justify'>
           <p className="text-blue-500 text-sm font-semibold uppercase tracking-widest mb-3">Our Mission</p>
           <h2 className="text-4xl font-extrabold mb-5">Why We Exist</h2>
           <p className="text-gray-400 leading-relaxed mb-4">

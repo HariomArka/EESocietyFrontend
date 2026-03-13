@@ -113,3 +113,46 @@ export const deleteProject = async (id: string, token: string) => {
   if (!res.ok) throw new Error('Failed to delete project');
   return res.json();
 };
+
+// ========================
+// CONTACT MESSAGES API
+// ========================
+export const submitContactMessage = async (data: Record<string, string>) => {
+  const res = await fetch(`${API_URL}/contact`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.message || 'Failed to send message');
+  }
+  return res.json();
+};
+
+export const fetchContactMessages = async (token: string) => {
+  const res = await fetch(`${API_URL}/contact`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) throw new Error('Failed to fetch messages');
+  return res.json();
+};
+
+export const replyContactMessage = async (id: string, token: string, replyText: string) => {
+  const res = await fetch(`${API_URL}/contact/${id}/reply`, {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({ replyText }),
+  });
+  if (!res.ok) throw new Error('Failed to send reply');
+  return res.json();
+};
+
+export const deleteContactMessage = async (id: string, token: string) => {
+  const res = await fetch(`${API_URL}/contact/${id}`, {
+    method: 'DELETE',
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) throw new Error('Failed to delete message');
+  return res.json();
+};
